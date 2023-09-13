@@ -30,7 +30,7 @@ def is_valid_date(year: int, month: int, day: int) -> bool:
 date = [[2021,2,29],[2020,2,29],[2020,13,29],[2020,1,32]]
 for d in date:
     if is_valid_date(*d):
-        print(f"La date {d} est valide")
+        print(f"La date {d[2]}/{d[1]}/{d[0]} est valide")
     else:
-        print(f"La date {d} n'est pas valide")
+        print(f"La date {d[2]}/{d[1]}/{d[0]} n'est pas valide")
 
